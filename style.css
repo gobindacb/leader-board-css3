@@ -10,17 +10,22 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .container {
     background-color: white;
     width: 870px;
     padding: 30px;
+    border-radius: 5px;
+    margin: 21px;
 }
 
 hr {
     border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
 }
 
 /* top-players style */
@@ -71,6 +76,7 @@ hr {
 .blog-info {
     margin-left: 16px;
 
+
 }
 
 .blog-title {
@@ -86,4 +92,21 @@ hr {
     text-decoration: none;
     font-size: 16px;
     color: #562eff;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 0px;
+}
+
+/* courses style */
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star.filled {
+    color: #ffc014;
 }
